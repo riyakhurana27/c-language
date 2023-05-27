@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int a=-1,b=1,c,n,i;
+printf("ENter a number");
+scanf("%d",&n);
+while(n)
+{
+ c=a+b;
+printf("%d\n",c);
+a=b;
+b=c;
+n--;
+}
+return 0;
+}
