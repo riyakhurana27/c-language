@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a[10],i,t,round;
+    printf("Enter 10 elements");
+    for(i=0;i<=9;i++)
+    scanf("%d",&a[i]);
+    for(round=1;round<=9;round++)
+    for(i=0;i<=9-round;i++)
+    {
+    if(a[i]>a[i+1])
+    {
+        t=a[i];
+        a[i]=a[i+1];
+        a[i+1]=t;
+    }
+    
+    }
+    printf("\n");
+    for(i=0;i<=9;i++)
+    {
+    printf("%d ",a[i]);
+    }
+
+
+
+}
